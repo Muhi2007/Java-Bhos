@@ -1,15 +1,20 @@
 package lesson02;
 
-import java.sql.SQLOutput;
+class Person {
+    int name;
+}
 
 public class DataType {
     public static void main(String[] args) {
-        int num = sum(2, 6);
-        String bhos = "meqsedeuygundur";
-        System.out.println(num + bhos);
-    }
+        Person p = new Person();
+        p.name = 12;
+        changeInt(p);
 
-    public static int sum(int a, int b) {
-        return a + b;
+        System.out.printf(p.name + "\n");
+    }
+    static void changeInt(Person obj){
+        obj = new Person();
+        obj.name += 1;
     }
 }
+
