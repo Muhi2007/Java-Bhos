@@ -1,20 +1,20 @@
 package lesson02;
 
 class Person {
-    int name;
+    String age;
 }
 
 public class DataType {
     public static void main(String[] args) {
         Person p = new Person();
-        p.name = 12;
+        p.age = "12";
+
         changeInt(p);
 
-        System.out.printf(p.name + "\n");
+        System.out.print(p.age);
     }
     static void changeInt(Person obj){
         obj = new Person();
-        obj.name += 1;
+        obj.age += "2";
     }
 }
-
